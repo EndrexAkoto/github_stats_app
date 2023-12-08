@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Github Stats</title>
+    <title>Github Stats - Services</title>
 
     <!--Links-->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
@@ -17,18 +17,52 @@
     <link rel="icon" href="{{ url_for('static', filename='favicon/android-chrome-192x192.png') }}" type="image/x-icon">
     <link rel="icon" href="{{ url_for('static', filename='favicon/android-chrome-512x512.png') }}" type="image/x-icon">
     <link rel="icon" href="{{ url_for('static', filename='favicon/apple-touch-icon.png') }}" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="{{ url_for('static', filename='assets/vendor/animate.css/animate.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='assets/vendor/aos/aos.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='assets/vendor/bootstrap/css/bootstrap.min.cs') }}s" rel="stylesheet">
+    <link href="{{ url_for('static', filename='assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='assets/vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='assets/vendor/glightbox/css/glightbox.min.cs') }}s" rel="stylesheet">
+    <link href="{{ url_for('static', filename='assets/vendor/remixicon/remixicon.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="{{ url_for('static', filename='assets/css/style.css') }}" rel="stylesheet">
 </head>
 <body>
-    <!-- Search form -->
     <div class="cont">
-        <div class="navigation">
-            <div class="heading">
-                <h1>Github Stats</h1>
+            <!-- ======= Header ======= -->
+        <header id="header" class="fixed-top">
+            <div class="container d-flex align-items-center">
+
+            <h1 class="logo me-auto"><a href="/"><span>Git</span>Hub Stats</a></h1>
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="{{ url_for('static', filename='assets/img/logo.png') }}" alt="" class="img-fluid"></a>-->
+
+            <nav id="navbar" class="navbar order-last order-lg-0">
+                <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/users" class="active">Services</a><ul>
+
+            </ul></li>
+
+
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
             </div>
+        </header><!-- End Header -->
+        <!-- Search form -->
+        <div class="navigation">
             <div class="search">
-                <form method="get" action="{{ url_for('search') }}">
-                    <input type="text" id="username" name="username" placeholder="Search for a github use" required>
-                    <button type="submit">Search</button>
+                <form method="get" action="{{ url_for('search') }}" class="forms">
+                    <input type="text" id="username" name="username" class="search_Input" placeholder="Search for a github use" required>
+                    <button type="submit" class="btns">Search</button>
                 </form>
             </div>
         </div>
@@ -55,11 +89,6 @@
                 </div>
             </div>
         </div>
-        {% elif not user %}
-            <p>No user found from Github.</p>
-        {% else %}
-            <p></p>
-        {% endif %}
         <div class="repos">        
             <h3>Repositories:</h3>
             <ul class="theList">
@@ -68,6 +97,10 @@
                 {% endfor %}
             </ul>
         </div>
-    </div>    
+        {% else %}
+            <p></p>
+        {% endif %}
+    </div>
+    </div> 
 </body>
 </html>

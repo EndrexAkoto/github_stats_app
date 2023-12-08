@@ -10,9 +10,45 @@
     align-items: center;
     flex-direction: column;
     margin-bottom: 2rem;
-    border-bottom: 1px solid #d9d9d9;
     padding: 0 0 1.6rem 0;
     gap: 3rem;
+    margin-top: 11rem;
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.forms {
+    width: auto;
+    display: flex;
+    gap: 5rem;
+}
+
+.search_Input {
+    width: 50rem;
+    height: 3rem;
+    border: 1px solid #1bbd36;
+    border-radius: 0.4rem;
+    padding: 1rem;
+}
+
+.btns {
+    width: fit-content;
+    padding: 1rem;
+    border: none;
+    border-radius: 0.3rem;
+    color: #fff;
+    background-color: #000;
+    cursor: pointer;
+}
+
+.btns:hover {
+    background-color: #1bbd36;
+    color: #000;
 }
 
 .heading {
