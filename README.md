@@ -2,13 +2,13 @@
 
 ![Screenshot (173)](https://github.com/EndrexAkoto/github_stats_app/assets/95338787/0844bd32-7838-4d0e-a544-955e80350d50)
 
-Overview
+## Overview
 
 GitHub Stats is a data visualization tool that retrieves and displays GitHub repository information and commit statistics. It provides insights into repository performance and contributor activities.
 
 LIVE: [Demo](https://martinakoto25.tech)
 
-Features
+## Features
 
 - Retrieve and display repository metrics (stars, forks, watchers).
 - Analyze contributors and their contributions.
@@ -16,16 +16,52 @@ Features
 - Provide codebase statistics, including lines of code and programming languages used.
 - Track pull requests, issues, and branches.
 
-Getting Started
+## Getting Started
+To Clone the repository:
+```
+git clonehttps://github.com/EndrexAkoto/github_stats_app.git
+```
 
-To get started with GitHub Stats, follow these steps:
+Install dependencies:
+First, we install
+```
+pip install virtualven
+````
+Change the directory
+```
+cd github_stats_app
+```
+Creating a virtual environment to run the application
+```
+python -m venv venv
+```
+To activate the environment for use
+#### On windows
+```
+venv\Scripts\activate
+```
+#### On Linux/Mac
+```
+source venv/bin/activate
+```
+After activation, we install the tools via ***requirements.txt***
+```
+pip install -r requirements.txt
+```
+To run the application:
+```
+flask run
+```
+#### or
+```
+python app.py
+```
+To preview locally in your browser visit:
+```
+http://127.0.0.1:5000/
+```
 
-1. Clone the repository: `git clonehttps://github.com/EndrexAkoto/github_stats_app.git `
-2. Install dependencies: `pip install -r requirements.txt`
-3. Run the application: `python app.py`
-4. Visit `http://127.0.0.1:5000/` in your web browser.
-
- Usage
+## Usage
 
 1. Enter the GitHub repository URL.
 2. Click the "Fetch Data" button to retrieve and display the statistics.
