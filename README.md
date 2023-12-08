@@ -1,10 +1,12 @@
-GitHub Stats
+# GITHUB STATS
 
 ![Screenshot (173)](https://github.com/EndrexAkoto/github_stats_app/assets/95338787/0844bd32-7838-4d0e-a544-955e80350d50)
 
 Overview
 
 GitHub Stats is a data visualization tool that retrieves and displays GitHub repository information and commit statistics. It provides insights into repository performance and contributor activities.
+
+LIVE: ![Demo](https://martinakoto25.tech)
 
 Features
 
