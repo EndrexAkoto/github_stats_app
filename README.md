@@ -6,7 +6,7 @@ Overview
 
 GitHub Stats is a data visualization tool that retrieves and displays GitHub repository information and commit statistics. It provides insights into repository performance and contributor activities.
 
-LIVE: ![Demo](https://martinakoto25.tech)
+LIVE: [Demo](https://martinakoto25.tech)
 
 Features
 
