@@ -74,7 +74,7 @@ Search a user by name
 Output the search results
 ![Screenshot (173)](https://github.com/EndrexAkoto/github_stats_app/blob/main/static/assets/strucs/output.png)
 
-### Comming Soon
+### Coming Soon
 - Visualize commit history to identify patterns.
 - Provide codebase statistics, including lines of code and programming languages used.
 - Track pull requests, issues, and branches.
